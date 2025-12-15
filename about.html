@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="./script.js"> defer</script>
 </head>
 <body>
     <header>
@@ -19,7 +21,7 @@
       <ul
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
-        <li><a href="/home.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -31,7 +33,7 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-xl">
-      <li><a href="/home.html">Home</a></li>
+      <li><a href="/./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -46,8 +48,11 @@
 </header>
 <main>
 <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-     <h1 class="text-4xl font-bold text-center">About Me</h1>
-     <p class="font-bold text-center ">My journey, experience, and values.</p>
+          <div class="flex flex-col gap-5 items-center">
+    <h1 class="text-4xl font-bold text-center">About Me</h1>
+    <p>My journey, experience, and values.</p>
+    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+  </div>
      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 ">
       <div class="space-y-5 lg:mt-12">
         <h1 class="text-4xl font-bold lg:w-1/2 lg:mt-22">Hey! I am Web Developer</h1>
@@ -63,8 +68,11 @@
 
 </section>
 <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-     <h1 class="text-4xl font-bold text-center"> Personal Biography</h1>
-     <div class="flex flex-col items-center gap-6 lg:flex-row justify-evenly mt-20">
+     <div class="flex flex-col gap-5 items-center"> 
+    <h1 class="text-4xl font-bold text-center"> Personal Biography</h1>
+    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+  </div>
+     <div class="flex flex-col items-center gap-6 lg:flex-row justify-around mt-20">
       <div class="min-h-[200px] min-w-[250px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-6">
         <h1 class="text-3xl font-bold">Age: 28 Years</h1>
         <h1 class="text-3xl font-bold">Experience: 5+ Years</h1>
@@ -75,18 +83,37 @@
       </div>
      </div>
 </section>
-<section class="mt-12 px-2 md:px-4 lg:px-30 my-16">
-     <h1 class="text-4xl font-bold text-center">Technical Skills</h1>
-     <div class="p-20 px-20 flex flex-col gap-10 lg:flex-row justify-between">
+<section class="container mx-auto mt-12 px-2 md:px-4 lg:px-30 my-16">
+       <div class="flex flex-col gap-5 items-center"> 
+    <h1 class="text-4xl font-bold text-center"> Technical Skills</h1>
+    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+  </div>
+     <div class="flex flex-col items-center gap-10 p lg:flex-row justify-between mt-20">
       <div class="space-y-4">
         <h1 class="text-2xl font-bold">HTML5 & CSS3</h1><progress class="progress progress-secondary w-100" value="95" max="100"></progress>
-      <h1 class="text-2xl font-bold">JavaScript (ES6+)</h1><progress class="progress progress-info w-100" value="70" max="100"></progress></div>
+      <h1 class="text-2xl font-bold">JavaScript (ES6+)</h1><progress class="progress progress-info w-100" value="70" max="100"></progress>
+    </div>
       
-      <divc lass="space-y-4">
-        <div><h1 class="text-2xl font-bold">React & Tailwind</h1><progress class="progress progress-primary w-100" value="70" max="100"></progress>
-        <h1 class="text-2xl font-bold">Backend (Node.js)</h1><progress class="progress progress-error w-100" value="90" max="100"></progress></div>
+      <div class="space-y-4">
+        <h1 class="text-2xl font-bold">React & Tailwind</h1><progress class="progress progress-primary w-100" value="70" max="100"></progress>
+        <h1 class="text-2xl font-bold">Backend (Node.js)</h1><progress class="progress progress-error w-100" value="90" max="100"></progress>
+      </div>
      </div>
 
+</section>
+<section>
+    <div class="flex flex-col gap-5 items-center">
+    <h1 class="text-4xl font-bold text-center">Trusted By</h1>
+    
+    <div class="bg-violet-800 w-[100px] h-[5px] rounded-lg"></div>
+    <div class="flex gap-10 my-10">
+      <p class="text-5xl font-bold text-gray-400"><i class="fa-solid fa-g"></i></p>
+      <p class="text-5xl font-bold text-gray-400"><i class="fa-brands fa-facebook"></i></p>
+      <p class="text-5xl font-bold text-gray-400"><i class="fa-brands fa-twitter"></i></p>
+      <p class="text-5xl font-bold text-gray-400"><i class="fa-brands fa-airbnb"></i></p>
+      <p class="text-5xl font-bold text-gray-400"><i class="fa-brands fa-amazon"></i></p>
+
+    </div>
 </section>
 </main>
 <!-- footer-section -->
@@ -96,7 +123,7 @@
     <a class="link link-hover">About us</a>
     <a class="link link-hover">Contact</a>
     <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
+    
   </nav>
   <nav>
     <div class="grid grid-flow-col gap-4">

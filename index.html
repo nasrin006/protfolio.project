@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="./script.js"> defer</script>
 </head>
-<body>
+<body class="bg-slate-50">
     <header>
         <nav>
             <div class="navbar bg-white shadow-sm">
@@ -19,7 +21,7 @@
       <ul
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
-        <li><a href="/home.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -31,7 +33,7 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-xl">
-      <li><a href="/home.html">Home</a></li>
+      <li><a href="./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -117,15 +119,15 @@
 <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
     <h1 class="text-4xl font-bold text-center my-16">Career Mission & Vision</h1>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
         <h1 class="text-3xl font-bold">Our Mission</h1>
         <p class="font-bold text-justify">To empower individuals with meaningful career opportunities by connecting talent with organizations that value growth, innovation, and purpose. We strive to provide guidance, clarity, and support at every step of the professional journey.</p>
     </div>
-    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-slate-100 flex flex-col items-center p-12 space-y-4">
+    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
         <h1 class="text-3xl font-bold">Our Vision</h1>
         <p class="font-bold text-justify">To become a trusted global platform where every individual can discover their potential, access life changing opportunities, and build a fulfilling career that aligns with their passion and ambitions.</p>
     </div>
-    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg  flex flex-col items-center p-12 space-y-4">
         <h1 class="text-3xl font-bold">Our Values</h1>
         <p class="font-bold text-justify">To become a trusted global platform where every individual can discover their potential, access life changing opportunities, and build a fulfilling career that aligns with their passion and ambitions</p>
     </div>
@@ -135,30 +137,40 @@
 <!-- My Services-Section -->
 
 <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-     <h1 class="text-4xl font-bold text-center">My Services</h1>
-     <p class="font-bold text-center ">We offer a range of high-quality services designed to help your business grow and succeed.</p>
-     <div class="grid  grid-cols-1 lg:grid-cols-3 justify-evenly gap-4">
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+          <div class="flex flex-col gap-5 items-center">
+    <h1 class="text-4xl font-bold text-center">My Services</h1>
+    <p>Quality solutions tailored to your needs.</p>
+    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+  </div>
+      <div class="grid  grid-cols-1 lg:grid-cols-3 justify-evenly gap-4 mt-10">
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-code"></i></p>
         <h1 class="text-3xl font-bold">Web Desing</h1>
-        <p class="font-bold text-justify"> We offer a range of high-quality services designed to help your business grow and succeed.</p>
+        <p class="font-bold min-w-1.5 text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p>
+
       </div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col     items-center p-12 space-y-4">
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg flex flex-col     items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-wrench"></i></p>
         <h1 class="text-2xl font-bold">Web development</h1>
-        <p class="font-bold text-justify"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg  flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-regular fa-paper-plane"></i></p>
         <h1 class="text-2xl font-bold">Digital Marketing</h1>
-        <p class="font-bold text-justify">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-screwdriver-wrench"></i></p>
         <h1 class="text-2xl font-bold">Web Hosting</h1>
-        <p class="font-bold text-justify">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-pen-nib"></i></p>
         <h1 class="text-2xl font-bold">App Devlopment</h1>
-        <p class="font-bold text-justify">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-arrows-spin"></i></p>
         <h1 class="text-2xl font-bold text-justify">IOT Project</h1>
-        <p class="font-bold text-justify"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+        <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
    </div>
-   </section>
+  </section>
 
    <!-- testimonal-Section -->
 
@@ -166,18 +178,18 @@
     <h1 class="text-4xl font-bold text-center">what our clients say</h1>
     <p class="font-bold text-center">Real feedback from customers who used our product/service.</p>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-3">
+    <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-3">
       <p>"The team made the whole process effortless — great communication and excellent results. Highly recommend!"</p>
       <h1 class="font-bold">Jane Doe</h1>
       <h3>CEO, Acme Co.</h3>
     </div>
-     <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-3">
+     <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg  flex flex-col items-center p-12 space-y-3">
       <p>"Excellent delivery and attention to detail — we saw measurable improvement within weeks."</p>
       <h1 class="font-bold">Omar Khan</h1>
       <h3>Product Manager</h3>
     </div>
-     <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-3">
-      <p>"Friendly team, clear milestones, and a product that exceeded expectations.""</p>
+     <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-3">
+      <p>"Friendly team, clear milestones, and a product that exceeded expectations."</p>
       <h1 class="font-bold">Priya Patel</h1>
       <h3>Founder</h3>
     </div>

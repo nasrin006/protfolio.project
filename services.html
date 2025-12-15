@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="./script.js"> defer</script>
 </head>
-<body>
+<body class="bg-slate-50">
     <header>
         <nav>
             <div class="navbar bg-white shadow-sm">
@@ -19,7 +21,7 @@
       <ul
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
-        <li><a href="/home.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -31,7 +33,7 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-xl">
-      <li><a href="/home.html">Home</a></li>
+      <li><a href="./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -49,29 +51,67 @@
 
 <main>
 <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-     <h1 class="text-4xl font-bold text-center">My Services</h1>
-     <p class="font-bold text-center ">We offer a range of high-quality services designed to help your business grow and succeed.</p>
-     <div class="grid  grid-cols-1 lg:grid-cols-3 justify-evenly gap-4">
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100 flex flex-col items-center p-12 space-y-4">
+          <div class="flex flex-col gap-5 items-center">
+    <h1 class="text-4xl font-bold text-center">My Services</h1>
+    <p>Quality solutions tailored to your needs.</p>
+    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+  </div>
+      <div class="grid  grid-cols-1 lg:grid-cols-3 justify-evenly gap-4 mt-10">
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-code"></i></p>
         <h1 class="text-3xl font-bold">Web Desing</h1>
-        <p class="font-bold text-justify"> We offer a range of high-quality services designed to help your business grow and succeed.</p>
+        <p class="font-bold min-w-1.5 text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p>
+
       </div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col     items-center p-12 space-y-4">
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg flex flex-col     items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-wrench"></i></p>
         <h1 class="text-2xl font-bold">Web development</h1>
-        <p class="font-bold text-justify"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100 flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg  flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-regular fa-paper-plane"></i></p>
         <h1 class="text-2xl font-bold">Digital Marketing</h1>
-        <p class="font-bold text-justify">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-screwdriver-wrench"></i></p>
         <h1 class="text-2xl font-bold">Web Hosting</h1>
-        <p class="font-bold text-justify">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-pen-nib"></i></p>
         <h1 class="text-2xl font-bold">App Devlopment</h1>
-        <p class="font-bold text-justify">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-slate-100  flex flex-col items-center p-12 space-y-4">
+        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-arrows-spin"></i></p>
         <h1 class="text-2xl font-bold text-justify">IOT Project</h1>
-        <p class="font-bold text-justify"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
+        <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
    </div>
+  </section>
+  <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
+    <h1 class="text-4xl font-bold text-center">Frequently Asked Questions</h1>
+  <div class="mt-10 space-y-4">
+    <div><div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+  <div class="collapse-title font-semibold after:start-5 after:end-auto pe-4 ps-12">How do I create an account?</div>
+  <div class="collapse-content text-sm">
+    Click the "Sign Up" button in the top right corner and follow the registration process.
+  </div>
+</div>
+</div>
+ <div class="space-y-4">
+  <div class=""><div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+  <div class="collapse-title font-semibold after:start-5 after:end-auto pe-4 ps-12">How do I create an account?</div>
+  <div class="collapse-content text-sm">
+    Click the "Sign Up" button in the top right corner and follow the registration process.
+  </div>
+</div>
+</div>
+ <div class="space-y-4">
+  <div ><div tabindex="0" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+  <div class="collapse-title font-semibold after:start-5 after:end-auto pe-4 ps-12">How do I create an account?</div>
+  <div class="collapse-content text-sm">
+    Click the "Sign Up" button in the top right corner and follow the registration process.
+  </div>
+</div>
+</div>
+</div>
   </section>
    </main>
 
@@ -83,7 +123,7 @@
     <a class="link link-hover">About us</a>
     <a class="link link-hover">Contact</a>
     <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
+    
   </nav>
   <nav>
     <div class="grid grid-flow-col gap-4">

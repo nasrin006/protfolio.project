@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="./script.js"> defer</script>
 </head>
 <body>
     <header>
@@ -19,7 +21,7 @@
       <ul
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
-        <li><a href="/home.html">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -31,7 +33,7 @@
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1 text-xl">
-      <li><a href="/home.html">Home</a></li>
+      <li><a href="./index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/protfolio.html">Protfolio</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -46,40 +48,43 @@
 </header>
 <main>
     <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-     <h1 class="text-4xl font-bold text-center">My Protfolio</h1>
-     <p class="font-bold text-center ">A timeline of my education and professional journey.</p>
+      <div class="flex flex-col gap-5 items-center"> 
+    <h1 class="text-4xl font-bold text-center"> My Portfolio</h1>
+    <p>A timeline of my education and professional journey.</p>
+    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+  </div>
      <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
   <table class="table">
     <!-- head -->
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Degree / Certification</th>
+        <th>	Passing Year</th>
+        <th>Status</th>
       </tr>
     </thead>
     <tbody>
       <!-- row 1 -->
       <tr>
         <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td> B.Sc in CSE</td>
+        <td>2022</td>
+        <td>Completed</td>
       </tr>
       <!-- row 2 -->
       <tr>
         <th>2</th>
-        <td>Hart Hagerty</td>
-        <td>Desktop Support Technician</td>
-        <td>Purple</td>
+        <td>Higher Secondary Certificate</td>
+        <td>2018</td>
+        <td>Completed</td>
       </tr>
       <!-- row 3 -->
       <tr>
         <th>3</th>
-        <td>Brice Swyre</td>
-        <td>Tax Accountant</td>
-        <td>Red</td>
+        <td>Secondary School Certificate</td>
+        <td>2016</td>
+        <td>Completed</td>
       </tr>
     </tbody>
   </table>
@@ -88,21 +93,76 @@
     
 
      <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-      <div class="w-full h-[300px] bg-fuchsia-500 rounded-3xl">
+      <div class="w-full h-[300px] bg-fuchsia-300 rounded-3xl">
          <div class="flex flex-col justify-center items-center pt-12 space-y-6">
         <h1 class="text-4xl font-bold">Professional Certifications</h1>
         <p class="text-xl w-1/2 text-center">I have completed several industry-standard certifications to keep my skills sharp.</p>
         
-        <button class="btn btn-active btn-secondary bg-violet-500">Viwe Details</button></div>
+        <!-- Open the modal using ID.showModal() method -->
+<button class="btn text-xl text-purple-600" onclick="my_modal_1.showModal()">View Details</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box space-y-4">
+    <h3 class="text-lg font-bold ">Full Stack Development</h3>
+    <p class="py-4">Successfully completed 300+ hours of intense training covering HTML, CSS, JS, React, and Node.js from Programming Hero.</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog></div>
         
-      </div>
-
-
-  </section>
+</section>
    <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
      <h1 class="text-4xl font-bold">Work Experience</h1>
-    </section>
-</main>
+    
+    <div><ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+  <li>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-start mb-10 md:text-end">
+      <time class="font-mono italic">2025 - Present</time>
+      <div class="text-lg font-black">Senior Developer</div>
+     Leading the frontend team at TechSolutions. Responsible for architecture and code reviews.
+    </div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div class="timeline-end md:mb-10">
+      <time class="font-mono italic">2021 - 2023</time>
+      <div class="text-lg font-black">Junior Web Developer</div>
+    Worked at Creative Agency building responsive websites for local businesses.
+    </div>
+  </section>
+  </main>
 <!-- footer-section -->
 
   <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
@@ -110,7 +170,7 @@
     <a class="link link-hover">About us</a>
     <a class="link link-hover">Contact</a>
     <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
+    
   </nav>
   <nav>
     <div class="grid grid-flow-col gap-4">
