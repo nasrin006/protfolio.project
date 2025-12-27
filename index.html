@@ -1,251 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="./script.js"> defer</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./script.js"> defer</script>
 </head>
+
 <body class="bg-slate-50">
-    <header>
-        <nav>
-            <div class="navbar bg-white shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+  <header>
+    <nav>
+      <div class="navbar bg-white shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/protfolio.html">Protfolio</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl font-bold  text-violet-500">MYPROTFOLIO</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/protfolio.html">Protfolio</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-active btn-secondary bg-violet-500"><a href="./protfolio.html">Hear Me</a></button> 
+        </div>
       </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/protfolio.html">Protfolio</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-       
-      </ul>
-    </div>
-    <a class="btn btn-ghost text-xl font-bold  text-violet-500">MYPROTFOLIO</a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 text-xl">
-      <li><a href="./index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/protfolio.html">Protfolio</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-   <button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
-  </div>
-</div>
-</nav>
+    </nav>
+    <!-- carousel-section -->
+    <section>
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class=" w-full h-[500px] bg-blue-300">
+            <div class="flex flex-col justify-center items-center pt-34 space-y-8">
+              <h1 class="text-4xl font-bold text-center">Building Digital Dreams</h1>
+              <p class="text-xl w-1/2 text-center">Full Stack Web Developer specializing in creating modern and
+                responsive web applications.</p>
+              <div class="flex gap-4"><button class="btn btn-active btn-secondary bg-violet-500"><a href="./protfolio.html">Hear Me</a></button> 
+                <button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class=" w-full h-[500px] bg-slate-500">
+            <div class="flex flex-col justify-center items-center pt-34 space-y-8">
+              <h1 class="text-4xl font-bold">UI/UX Design</h1>
+              <p class="text-xl w-1/2 text-center">Crafting user-friendly interfaces with a focus on aesthetics and
+                functionality.</p>
+              <div class="flex gap-4"><button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
+                <button class="btn btn-active btn-secondary bg-violet-500"><a href="./contact.html">contact Me</a></button> 
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class=" w-full h-[500px] bg-blue-300">
+            <div class="flex flex-col justify-center items-center pt-34 space-y-8">
+              <h1 class="text-4xl font-bold">SEO Optimization</h1>
+              <p class="text-xl w-1/2 text-center">Ranking your website higher with modern SEO strategies.</p>
+              <div class="flex gap-4"><button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
+                <button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
 
-<section>
-    <div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <div class=" w-full h-[500px] bg-cyan-200">
-        <div class="flex flex-col justify-center items-center pt-34 space-y-8">
-        <h1 class="text-4xl font-bold">Building Digital Dreams</h1>
-        <p class="text-xl w-1/2 text-center">Full Stack Web Developer specializing in creating modern and responsive web applications.</p>
-        <div class="flex gap-4"><button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
-        <button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button></div>
-        </div>
-    </div>
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide4" class="btn btn-circle">❮</a>
-      <a href="#slide2" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide2" class="carousel-item relative w-full">
-    <div class=" w-full h-[500px] bg-slate-500">
-        <div class="flex flex-col justify-center items-center pt-34 space-y-8">
-        <h1 class="text-4xl font-bold">UI/UX Design</h1>
-        <p class="text-xl w-1/2 text-center">Crafting user-friendly interfaces with a focus on aesthetics and functionality.</p>
-        <div class="flex gap-4"><button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
-        <button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button></div>
-        </div>
-    </div>
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide1" class="btn btn-circle">❮</a>
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide3" class="carousel-item relative w-full">
-    <div class=" w-full h-[500px] bg-blue-300">
-        <div class="flex flex-col justify-center items-center pt-34 space-y-8">
-        <h1 class="text-4xl font-bold">SEO Optimization</h1>
-        <p class="text-xl w-1/2 text-center">Ranking your website higher with modern SEO strategies.</p>
-        <div class="flex gap-4"><button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
-        <button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button></div>
-        </div>
-    </div>
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide2" class="btn btn-circle">❮</a>
-      <a href="#slide4" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  
-  </div>
-</div>
-</section>
-</header>
-<main>
-    
-<!-- About Me-Section -->
-
-<section class="mt-12 px-2 md:px-4 lg:px-30">
-    <h1 class="text-4xl font-bold text-center my-16">About Me</h1>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 ">
-      <div class="space-y-5 lg:mt-12">
-        <h1 class="text-4xl font-bold lg:w-1/2 lg:mt-22">Hey! I am Web Developer</h1>
-        <p class="text-justify text-xl font-bold">Obviously I am a Web Designer. Web Developer with over 7 years of the best experience. Experienced with all stages of the development cycle for ourself dynamic web projects. The as opposed to using Content here, content here, making it look like readable English.</p>
-    </div>
-    <div class="min-h-[200px] min-w-[300px]">
-        <img src="./image/f8488b86d5bce5ddb207519b0b033049.jpg" 
-        class=" w-full h-full object-cover rounded-4xl"
-        alt="">
       </div>
-</div>
-</section>
+      </div>
+    </section>
+  </header>
+  <main>
 
-<!-- Career Mission & Vision-Section -->
+    <!-- About Me-Section -->
 
-<section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-    <h1 class="text-4xl font-bold text-center my-16">Career Mission & Vision</h1>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
-        <h1 class="text-3xl font-bold">Our Mission</h1>
-        <p class="font-bold text-justify">To empower individuals with meaningful career opportunities by connecting talent with organizations that value growth, innovation, and purpose. We strive to provide guidance, clarity, and support at every step of the professional journey.</p>
-    </div>
-    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
-        <h1 class="text-3xl font-bold">Our Vision</h1>
-        <p class="font-bold text-justify">To become a trusted global platform where every individual can discover their potential, access life changing opportunities, and build a fulfilling career that aligns with their passion and ambitions.</p>
-    </div>
-    <div class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg  flex flex-col items-center p-12 space-y-4">
-        <h1 class="text-3xl font-bold">Our Values</h1>
-        <p class="font-bold text-justify">To become a trusted global platform where every individual can discover their potential, access life changing opportunities, and build a fulfilling career that aligns with their passion and ambitions</p>
-    </div>
-    </div>
-</section>
+    <section class="container mx-auto mt-12 px-2 md:px-4 lg:px-6 my-16 space-y-4">
+      <div class="flex flex-col gap-5 items-center">
+        <h1 class="text-4xl font-bold text-center">About Me</h1>
+        <p>My journey, experience, and values.</p>
+        <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 pt-5">
+        <div class="space-y-5 flex items-center flex-col lg:items-start lg:mt-12">
+          <h1 class="text-4xl font-bold text-center lg:w-1/2 lg:mt-22 lg:text-left">Hey! I am Web Developer</h1>
+          <p class="text-justify text-xl font-bold pt-5">Obviously I am a Web Designer. Web Developer with over 7 years of
+            the best experience. Experienced with all stages of the development cycle for ourself dynamic web projects.
+            The as opposed to using Content here, content here, making it look like readable English.</p>
+            <button class="btn btn-active btn-secondary bg-violet-500"><a href="./contact.html">contact Me</a></button> 
+        </div>
+        <div class="min-h-[200px] min-w-[300px]">
+          <img src="./image/f8488b86d5bce5ddb207519b0b033049.jpg" class=" w-full h-full object-cover rounded-4xl"
+            alt="">
+        </div>
+        
+      </div>
+    </section>
 
-<!-- My Services-Section -->
+    <!-- Career Mission & Vision-Section -->
 
-<section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-          <div class="flex flex-col gap-5 items-center">
-    <h1 class="text-4xl font-bold text-center">My Services</h1>
-    <p>Quality solutions tailored to your needs.</p>
-    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
-  </div>
+    <section class="container mx-auto mt-12 px-2 md:px-4 lg:px-6 my-16 space-y-4">
+      <h1 class="text-4xl font-bold text-center my-16">Career Mission & Vision</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div
+          class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
+          <h1 class="text-3xl font-bold">Our Mission</h1>
+          <p class="font-bold text-justify">To empower individuals with meaningful career opportunities by connecting
+            talent with organizations that value growth, innovation, and purpose. We strive to provide guidance,
+            clarity, and support at every step of the professional journey.</p>
+        </div>
+        <div
+          class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
+          <h1 class="text-3xl font-bold">Our Vision</h1>
+          <p class="font-bold text-justify">To become a trusted global platform where every individual can discover
+            their potential, access life changing opportunities, and build a fulfilling career that aligns with their
+            passion and ambitions.</p>
+        </div>
+        <div
+          class="min-h-[300px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg  flex flex-col items-center p-12 space-y-4">
+          <h1 class="text-3xl font-bold">Our Values</h1>
+          <p class="font-bold text-justify">To become a trusted global platform where every individual can discover
+            their potential, access life changing opportunities, and build a fulfilling career that aligns with their
+            passion and ambitions</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Services-Section -->
+
+    <section class="container mx-auto mt-12 px-2 md:px-4 lg:px-6 my-16 space-y-4">
+      <div class="flex flex-col gap-5 items-center">
+        <h1 class="text-4xl font-bold text-center">My Services</h1>
+        <p>Quality solutions tailored to your needs.</p>
+        <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+      </div>
       <div class="grid  grid-cols-1 lg:grid-cols-3 justify-evenly gap-4 mt-10">
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
-        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-code"></i></p>
-        <h1 class="text-3xl font-bold">Web Desing</h1>
-        <p class="font-bold min-w-1.5 text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p>
+        <div
+          class="min-h-[200px] min-w-[150px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-4">
+          <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-code"></i></p>
+          <h1 class="text-3xl font-bold">Web Desing</h1>
+          <p class="font-bold min-w-1.5 text-center"> We offer a range of high-quality services designed to help your
+            business grow and succeed.</p>
 
+        </div>
+        <div
+          class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg flex flex-col     items-center p-12 space-y-4">
+          <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-wrench"></i></p>
+          <h1 class="text-2xl font-bold">Web development</h1>
+          <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business
+            grow and succeed.</p>
+        </div>
+        <div
+          class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg  flex flex-col items-center p-12 space-y-4">
+          <p class="text-5xl font-bold text-sky-600"><i class="fa-regular fa-paper-plane"></i></p>
+          <h1 class="text-2xl font-bold">Digital Marketing</h1>
+          <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow
+            and succeed.</p>
+        </div>
+        <div
+          class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+          <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-screwdriver-wrench"></i></p>
+          <h1 class="text-2xl font-bold">Web Hosting</h1>
+          <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow
+            and succeed.</p>
+        </div>
+        <div
+          class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+          <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-pen-nib"></i></p>
+          <h1 class="text-2xl font-bold">App Devlopment</h1>
+          <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow
+            and succeed.</p>
+        </div>
+        <div
+          class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
+          <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-arrows-spin"></i></p>
+          <h1 class="text-2xl font-bold text-justify">IOT Project</h1>
+          <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business
+            grow and succeed.</p>
+        </div>
       </div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg flex flex-col     items-center p-12 space-y-4">
-        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-wrench"></i></p>
-        <h1 class="text-2xl font-bold">Web development</h1>
-        <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg  flex flex-col items-center p-12 space-y-4">
-        <p class="text-5xl font-bold text-sky-600"><i class="fa-regular fa-paper-plane"></i></p>
-        <h1 class="text-2xl font-bold">Digital Marketing</h1>
-        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
-        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-screwdriver-wrench"></i></p>
-        <h1 class="text-2xl font-bold">Web Hosting</h1>
-        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
-        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-pen-nib"></i></p>
-        <h1 class="text-2xl font-bold">App Devlopment</h1>
-        <p class="font-bold text-center">We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-      <div class="min-h-[200px] min-w-[150px] border-none rounded-3xl  bg-white shadow-lg   flex flex-col items-center p-12 space-y-4">
-        <p class="text-5xl font-bold text-sky-600"><i class="fa-solid fa-arrows-spin"></i></p>
-        <h1 class="text-2xl font-bold text-justify">IOT Project</h1>
-        <p class="font-bold text-center"> We offer a range of high-quality services designed to help your business grow and succeed.</p></div>
-   </div>
-  </section>
+    </section>
 
-   <!-- testimonal-Section -->
+    <!-- testimonal-Section -->
 
-   <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-    <h1 class="text-4xl font-bold text-center">what our clients say</h1>
-    <p class="font-bold text-center">Real feedback from customers who used our product/service.</p>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-    <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-3">
-      <p>"The team made the whole process effortless — great communication and excellent results. Highly recommend!"</p>
-      <h1 class="font-bold">Jane Doe</h1>
-      <h3>CEO, Acme Co.</h3>
-    </div>
-     <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg  flex flex-col items-center p-12 space-y-3">
-      <p>"Excellent delivery and attention to detail — we saw measurable improvement within weeks."</p>
-      <h1 class="font-bold">Omar Khan</h1>
-      <h3>Product Manager</h3>
-    </div>
-     <div class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-3">
-      <p>"Friendly team, clear milestones, and a product that exceeded expectations."</p>
-      <h1 class="font-bold">Priya Patel</h1>
-      <h3>Founder</h3>
-    </div>
-  </div>
-   </section>
+    <section class="container mx-auto mt-12 px-2 md:px-4 lg:px-6 my-16 space-y-4">
+      <h1 class="text-4xl font-bold text-center">what our clients say</h1>
+      <p class="font-bold text-center">Real feedback from customers who used our product/service.</p>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 pt-6">
+        <div
+          class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-3 ">
+          <div><img src="https://img.freepik.com/premium-photo/casual-businessman-smiling-camera_13339-239867.jpg?semt=ais_hybrid&w=740&q=80" class="w-[50pxd] h-[50px] rounded-full"></div>
+          <div class="rating">
+            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" aria-label="2 star"
+              checked="checked" />
+            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+            <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+          </div>
+          <p>"The team made the whole process effortless — great communication and excellent results. Highly recommend!"
+          </p>
+          <h1 class="font-bold">Jane Doe</h1>
+          <h3>CEO, Acme Co.</h3>
+        </div>
+        <div
+          class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg  flex flex-col items-center p-12 space-y-3">
+          <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8LJA8jsoShkGlS-x3Scp7VX8Dpum1Non4g&s" class="w-[100px] h-[100px] rounded-full object-cover"></div>
+          <div class="rating">
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" aria-label="1 star" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" aria-label="2 star"
+              checked="checked" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" aria-label="3 star" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" aria-label="4 star" />
+            <input type="radio" name="rating-4" class="mask mask-star-2 bg-green-500" aria-label="5 star" />
+          </div>
+          <p>"Excellent delivery and attention to detail — we saw measurable improvement within weeks."</p>
+          <h1 class="font-bold">Omar Khan</h1>
+          <h3>Product Manager</h3>
+        </div>
+        <div
+          class="min-h-[250px] min-w-[200px] border-none rounded-3xl bg-white shadow-lg flex flex-col items-center p-12 space-y-3">
+          <div><img src="https://static.vecteezy.com/ti/fotos-kostenlos/t2/36473544-ai-generiert-halfte-korper-von-glucklich-kaukasisch-anruf-center-arbeiter-mit-kopfhorer-stehen-mit-isoliert-weiss-hintergrund-foto.jpeg" class="w-[100px] h-[100px] rounded-full object-cover"></div>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="1 star" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="2 star"
+              checked="checked" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="3 star" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="4 star" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" aria-label="5 star" />
+          </div>
+          <p>"Friendly team, clear milestones, and a product that exceeded expectations."</p>
+          <h1 class="font-bold">Priya Patel</h1>
+          <h3>Founder</h3>
+        </div>
+      </div>
+    </section>
 
-   <!-- footer-section -->
+    <!-- footer-section -->
 
-  <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-  <nav class="grid grid-flow-col gap-4">
-    <a class="link link-hover">About us</a>
-    <a class="link link-hover">Contact</a>
-    <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
-  </nav>
-  <nav>
-    <div class="grid grid-flow-col gap-4">
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-    </div>
-  </nav>
-  <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-  </aside>
-</footer>
+    <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+              </path>
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+              </path>
+            </svg>
+          </a>
+          <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <aside>
+        <h1 id="dateTime">Date Is Loading...........</h1>
+        <p>Copyright © {new Date().getFullYear()}</p>
+      </aside>
+    </footer>
 </body>
-</html>
 
+</html>

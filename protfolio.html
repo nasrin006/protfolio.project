@@ -1,218 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="./script.js"> defer</script>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="navbar bg-white shadow-sm">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-      </div>
-      <ul
-        tabindex="-1"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/protfolio.html">Protfolio</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-       
-      </ul>
-    </div>
-    <a class="btn btn-ghost text-xl font-bold  text-violet-500">MYPROTFOLIO</a>
-  </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1 text-xl">
-      <li><a href="./index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/protfolio.html">Protfolio</a></li>
-        <li><a href="/services.html">Services</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-   <button class="btn btn-active btn-secondary bg-violet-500">Hear Me</button>
-  </div>
-</div>
-</nav>
-</header>
-<main>
-    <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-      <div class="flex flex-col gap-5 items-center"> 
-    <h1 class="text-4xl font-bold text-center"> My Portfolio</h1>
-    <p>A timeline of my education and professional journey.</p>
-    <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
-  </div>
-     <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
-  <table class="table">
-    <!-- head -->
-    <thead>
-      <tr>
-        <th></th>
-        <th>Degree / Certification</th>
-        <th>	Passing Year</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- row 1 -->
-      <tr>
-        <th>1</th>
-        <td> B.Sc in CSE</td>
-        <td>2022</td>
-        <td>Completed</td>
-      </tr>
-      <!-- row 2 -->
-      <tr>
-        <th>2</th>
-        <td>Higher Secondary Certificate</td>
-        <td>2018</td>
-        <td>Completed</td>
-      </tr>
-      <!-- row 3 -->
-      <tr>
-        <th>3</th>
-        <td>Secondary School Certificate</td>
-        <td>2016</td>
-        <td>Completed</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-     </section>
-    
 
-     <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-      <div class="w-full h-[300px] bg-fuchsia-300 rounded-3xl">
-         <div class="flex flex-col justify-center items-center pt-12 space-y-6">
-        <h1 class="text-4xl font-bold">Professional Certifications</h1>
-        <p class="text-xl w-1/2 text-center">I have completed several industry-standard certifications to keep my skills sharp.</p>
-        
-        <!-- Open the modal using ID.showModal() method -->
-<button class="btn text-xl text-purple-600" onclick="my_modal_1.showModal()">View Details</button>
-<dialog id="my_modal_1" class="modal">
-  <div class="modal-box space-y-4">
-    <h3 class="text-lg font-bold ">Full Stack Development</h3>
-    <p class="py-4">Successfully completed 300+ hours of intense training covering HTML, CSS, JS, React, and Node.js from Programming Hero.</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog></div>
-        
-</section>
-   <section class="mt-12 px-2 md:px-4 lg:px-30 my-16 space-y-6">
-     <h1 class="text-4xl font-bold">Work Experience</h1>
-    
-    <div><ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
-  <li>
-    <div class="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        class="h-5 w-5"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </div>
-    <div class="timeline-start mb-10 md:text-end">
-      <time class="font-mono italic">2025 - Present</time>
-      <div class="text-lg font-black">Senior Developer</div>
-     Leading the frontend team at TechSolutions. Responsible for architecture and code reviews.
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div class="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        class="h-5 w-5"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </div>
-    <div class="timeline-end md:mb-10">
-      <time class="font-mono italic">2021 - 2023</time>
-      <div class="text-lg font-black">Junior Web Developer</div>
-    Worked at Creative Agency building responsive websites for local businesses.
-    </div>
-  </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="./script.js"> defer</script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navbar bg-white shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-xl">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="/about.html">About</a></li>
+              <li><a href="/protfolio.html">Protfolio</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl font-bold  text-violet-500">MYPROTFOLIO</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/protfolio.html">Protfolio</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-active btn-secondary bg-violet-500"><a href="./protfolio.html">Hear Me</a></button> 
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="container mx-auto mt-12 px-2 md:px-4 lg:px-6 my-16 space-y-4">
+      <div class="flex flex-col gap-5 items-center">
+        <h1 class="text-4xl font-bold text-center"> My Portfolio</h1>
+        <p class="font-bold text-center">A timeline of my education and professional journey.</p>
+        <div class="bg-violet-800 w-[150px] h-[5px] rounded-lg"></div>
+      </div>
+      <div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
+        <table class="table">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th></th>
+              <th>Degree / Certification</th>
+              <th> Passing Year</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- row 1 -->
+            <tr>
+              <th>1</th>
+              <td> B.Sc in CSE</td>
+              <td>2022</td>
+              <td>Completed</td>
+            </tr>
+            <!-- row 2 -->
+            <tr>
+              <th>2</th>
+              <td>Higher Secondary Certificate</td>
+              <td>2018</td>
+              <td>Completed</td>
+            </tr>
+            <!-- row 3 -->
+            <tr>
+              <th>3</th>
+              <td>Secondary School Certificate</td>
+              <td>2016</td>
+              <td>Completed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="container mx-auto mt-12 px-2 md:px-4 lg:px-6 my-16 space-y-4">
+      <div class="w-full min-h-[300px] bg-fuchsia-300 rounded-3xl ">
+        <div class="flex flex-col justify-center items-center pt-12 space-y-6 ">
+          <h1 class="text-4xl font-bold text-center">Professional Certifications</h1>
+          <p class="text-xl w-1/2 text-center">I have completed several industry-standard certifications to keep my
+            skills sharp.</p>
+
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn text-xl text-purple-600" onclick="my_modal_1.showModal()">View Details</button>
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box space-y-4">
+              <h3 class="text-lg font-bold ">Full Stack Development</h3>
+              <p class="py-4">Successfully completed 300+ hours of intense training covering HTML, CSS, JS, React, and
+                Node.js from Programming Hero.</p>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+
+    </section>
+    <section class="container mx-auto mt-12 px-2 md:px-4 lg:px-6 my-16 space-y-4">
+      <h1 class="text-4xl font-bold">Work Experience</h1>
+
+      <div>
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <li>
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="timeline-start mb-10 md:text-end">
+              <time class="font-mono italic">2025 - Present</time>
+              <div class="text-lg font-black">Senior Developer</div>
+              Leading the frontend team at TechSolutions. Responsible for architecture and code reviews.
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="timeline-end md:mb-10">
+              <time class="font-mono italic">2021 - 2023</time>
+              <div class="text-lg font-black">Junior Web Developer</div>
+              Worked at Creative Agency building responsive websites for local businesses.
+            </div>
+    </section>
   </main>
-<!-- footer-section -->
+  <!-- footer-section -->
 
   <footer class="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
-  <nav class="grid grid-flow-col gap-4">
-    <a class="link link-hover">About us</a>
-    <a class="link link-hover">Contact</a>
-    <a class="link link-hover">Jobs</a>
-    
-  </nav>
-  <nav>
-    <div class="grid grid-flow-col gap-4">
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-    </div>
-  </nav>
-  <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-  </aside>
-</footer>
-</body>
-</html>
+    <nav class="grid grid-flow-col gap-4">
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
 
+    </nav>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+        <a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <aside>
+      <h1 id="dateTime">Date Is Loading...........</h1>
+      <p>Copyright © {new Date().getFullYear()}</p>
+    </aside>
+  </footer>
+</body>
+
+</html>
